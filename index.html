@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Color The Blackboard</title>
+</head>
+<body>
+<center><h1><i id= "logo" class="fas fa-paint-brush"></i> <span> Doodle on the Canvas</span> </h1></center>
+
+
+<ul>
+	<li>Select a color and start doodling! <input type="color" value="#2098df" id="colorSelect" ng-model="whichcolor" />  </li></li>
+	<li>Your chosen color's HEX code is: {{ whichcolor }}</li>
+	<li>Click the clear button to clear the canvas: <button id="clearcanvas">Clear</button> </li>
+</ul>
+
+
+<center><canvas width="1000" height="1000"></canvas></center>
+
+<div id="pagebottom">Erez Wilderman 2018Ⓒ</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
